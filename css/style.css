@@ -11,6 +11,12 @@ body{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
     Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+.flex{
+    display: flex;
+}
+.centra{
+    justify-content: center;
+}
 .contenitore{
     width:75%;
     min-width: 650px;
@@ -18,12 +24,17 @@ body{
     max-width: 1100px;
     min-height: 40px;
     margin:0 auto;
-    display: flex;
 }
 .contenitore-reverse{
     flex-direction: row-reverse;
 }
 
+
+
+/* UTILITY */
+.testo-centrato{
+    text-align: center;
+}
 /* HEADER */
 
 header{
@@ -37,10 +48,6 @@ header div.contenitore{
     
     max-height: 40px;   
     min-width: 650px;
-
-    
-   
-
     display: flex;
     line-height: 40px;      /*debug*/
     vertical-align: center;
@@ -85,19 +92,28 @@ nav a{
     justify-content: flex-end;
     align-content: center;
 }
+/* Bottoni */
 .bottone{
     background-color: white;
-    height: 30px;
+    max-height: 30px; 
     display: flex;
     flex-wrap: wrap;
     align-content: center;
 
-    padding: 0.5rem ;
+    padding: 1rem ;
     border-radius: 20px;
+
+    font-size: 0.8rem;
 }
 .bottone a{
     text-decoration: none;
     color: black;
+}
+.bottone-nero{
+    background-color:#23272a;
+    color: white;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 
 /*MAIN*/
@@ -108,16 +124,30 @@ nav a{
 }
 
 /*1*/
-.sezione-blu{
-    background-color: #00008b;
+.jumbo{
+    background-image: url(../img/jumbo.png);
+    background-size:cover;
+   
 }
-.blocco1-A{    
+.blocco-jumbo{    
     width: 40%;     
     background-color: #ee81ee;
-    height: 250px;    /* debug */
     border: 1px dashed black;
+    margin-bottom: 10%;
 }
-
+/*Scritte*/
+.blocco-jumbo h1{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+.blocco-jumbo p{
+    color: white;
+    padding-bottom: 2rem;
+}
+i{
+    font-size: 1rem;
+}
 /*2*/
 .sezione-bianca{
     background-color: #ffffff;
