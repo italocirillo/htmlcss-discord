@@ -1,0 +1,165 @@
+/*RESET*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/*COMMON*/
+.contenitore{
+    width:75%;
+    max-width: 1100px;
+    min-height: 40px;
+    margin:0 auto;
+    display: flex;
+}
+.contenitore-reverse{
+    flex-direction: row-reverse;
+}
+
+/* HEADER */
+header{
+    background-color: #add8e6;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header div.contenitore{
+    
+    height: 40px;   /* debug */
+    background-color: #daa521;
+    border:2px black;
+    border-style: dashed;
+
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;      /*debug*/
+    vertical-align: center;
+}
+
+/*Menù*/
+nav{
+    width: 50%;
+    display: flex;
+}
+nav ul{
+    
+    width: 100%;
+    list-style-type: none;
+    border-right:2px dashed black ;
+    border-left:2px dashed black ;
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+/*Login*/
+.login a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+/*MAIN*/
+
+/*Sezioni*/
+.sezione{
+    padding:30px 0px 30px;
+}
+
+/*1*/
+.sezione-blu{
+    background-color: #00008b;
+}
+.blocco1-A{    
+    width: 40%;     
+    background-color: #ee81ee;
+    height: 250px;    /* debug */
+    border: 1px dashed black;
+}
+
+/*2*/
+.sezione-bianca{
+    background-color: #ffffff;
+}
+.blocco2-A{
+    width: 60%;
+    background-color: #1d90ff;
+    height: 350px;    /* debug */
+    border: 1px dashed black;
+}
+.blocco2-B{
+    width: 40%;
+    background-color: #ffc0cb;
+    height: 350px;    /* debug */
+    border: 1px dashed black;
+}
+
+/*3*/
+.sezione-grigio{
+    background-color: #d3d3d3;
+}
+
+/*5*/
+.blocco5-A{        
+    background-color: #238b21;
+    height: 500px;    /* debug */
+    border: 1px dashed black;
+}
+
+/* 6 */
+.sezione-nera{
+    background-color: #23272a;
+}
+.blocco6-A{        
+    width: 30%;
+    background-color: #f08080;
+    height: 350px;    /* debug */
+    border: 1px dashed black; 
+}
+.blocco6-B{
+    width: 70%;
+    height: 350px;    /* debug */
+    border: 1px dashed black;
+}
+/*Menù*/
+.blocco6-B ul{
+    height: 350px;
+    list-style-type: none;
+
+    display: flex;
+    background-color: #20b1aa;
+}
+.blocco6-B ul li{
+    flex-direction: column;
+    border: 1px dashed white;
+    flex-grow: 1;
+}
+
+/*FOOTER*/
+footer{
+    margin-top: 2px;
+    background-color: #23272a;
+    height: 100px;  /*debug*/
+
+    display: flex;
+    align-items: flex-end;
+}
+.blocco-footer{
+    background-color: #7effd4;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Bottone*/
+.blocco-footer button{
+    background-color: #ffb6c1;
+    border: 1px dashed black;
+    padding: 0.3rem;
+}
