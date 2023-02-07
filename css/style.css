@@ -28,7 +28,9 @@ body{
 .contenitore-reverse{
     flex-direction: row-reverse;
 }
-
+img{
+    width: 100%;
+}
 
 
 /* UTILITY */
@@ -55,7 +57,7 @@ header div.contenitore{
 
 /*Menù*/
 nav{
-    width: 50%;
+    width: 70%;
     display: flex;
 }
 /* Lista */
@@ -79,13 +81,13 @@ nav a{
 
 /* Logo */
 .logo{
-    width: 25% ;
+    width: 15%;
     max-height: 100%;
 }
 
 /*Login*/
 .login{
-    width: 25%; 
+    width: 15%; 
 
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +122,11 @@ nav a{
 
 /*Sezioni*/
 .sezione{
-    padding:30px 0px 30px;
+    padding:10rem;
+}
+
+.jumbo{
+    margin: 0;
 }
 
 /*1*/
@@ -130,15 +136,14 @@ nav a{
    
 }
 .blocco-jumbo{    
-    width: 40%;     
-    background-color: #ee81ee;
-    border: 1px dashed black;
-    margin-bottom: 10%;
+    width: 40%;
 }
 /*Scritte*/
 .blocco-jumbo h1{
     width: 100%;
     text-align: center;
+    color: white;
+    font-size: 2.5rem;
     padding: 2rem 0rem;
 }
 .blocco-jumbo p{
@@ -148,21 +153,27 @@ nav a{
 i{
     font-size: 1rem;
 }
+h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+p{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 /*2*/
 .sezione-bianca{
     background-color: #ffffff;
 }
 .blocco2-A{
     width: 60%;
-    background-color: #1d90ff;
-    height: 350px;    /* debug */
-    border: 1px dashed black;
 }
 .blocco2-B{
     width: 40%;
-    background-color: #ffc0cb;
-    height: 350px;    /* debug */
-    border: 1px dashed black;
 }
 
 /*3*/
